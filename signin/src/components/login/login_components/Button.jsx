@@ -1,9 +1,9 @@
 import React from "react";
 
-function Button() {
+function Button(props) {
   return (
     <div>
-      <button type="submit">Login</button>
+      <button type={props.submit}>Login</button>
     </div>
   );
 }

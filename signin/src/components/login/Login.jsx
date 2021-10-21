@@ -1,15 +1,14 @@
 import React from "react";
 import Button from "./login_components/Button";
-import Password from "./login_components/Password";
-import Username from "./login_components/Username";
+import Input from "./login_components/Input";
 
 function Login() {
   return (
     <div>
       <form className="form">
-        <Username />
-        <Password />
-        <Button />
+        <Input type="text" placeholder="Username" />
+        <Input type="password" placeholder="Password" />
+        <Button type="submit" />
       </form>
     </div>
   );
