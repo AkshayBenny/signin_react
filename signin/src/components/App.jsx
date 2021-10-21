@@ -1,7 +1,7 @@
 import React from "react";
 import Form from "./Form";
 
-const userIsRegistered = false;
+const userIsRegistered = true;
 
 function App() {
   return <Form isRegistered={userIsRegistered} />;
