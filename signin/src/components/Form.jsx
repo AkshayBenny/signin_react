@@ -1,11 +1,13 @@
 import React from "react";
 import Button from "./subcomponents/Button";
 import Input from "./subcomponents/Input";
+import Greet from "./subcomponents/Greet";
 
 function Form(props) {
   return (
     <div>
       <div className="container">
+        <Greet />
         <form className="form">
           <Input type="text" placeholder="Username" />
           <Input type="password" placeholder="Password" />
