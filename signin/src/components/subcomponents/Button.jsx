@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 
 function Button(props) {
-  const [hoverIn, setHoverIn] = useState(false);
+  const [btnColor, setHoverIn] = useState("white");
+
+  const myColor = {
+    backgroundColor: btnColor,
+  };
 
   function onHoverIn() {
-    setHoverIn(true);
+    setHoverIn("black");
   }
 
   function onHoverOut() {
-    setHoverIn(false);
+    setHoverIn("white");
   }
 
   return (
@@ -16,7 +20,7 @@ function Button(props) {
       <button
         onMouseOver={onHoverIn}
         onMouseOut={onHoverOut}
-        style={{ backgroundColor: hoverIn ? "black" : "white" }}
+        style={myColor}
         id="btn"
         type={props.submit}
       >
