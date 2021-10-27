@@ -10,6 +10,7 @@ function Form(props) {
   function handleChange(event) {
     setMsg(event.target.value);
   }
+
   return (
     <div>
       <div className="container">
