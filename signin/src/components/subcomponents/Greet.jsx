@@ -5,7 +5,7 @@ function Greet(props) {
   // console.log(props.greet);
   return (
     <div>
-      <h1>Hello {props.greet}</h1>
+      <h1>Hello {props.greet}!</h1>
     </div>
   );
 }
