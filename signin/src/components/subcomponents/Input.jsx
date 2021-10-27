@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Input(props) {
   return (
     <div>
-      <input type={props.type} placeholder={props.placeholder} />
+      <input
+        onChange={props.change}
+        type={props.type}
+        placeholder={props.placeholder}
+      />
     </div>
   );
 }
