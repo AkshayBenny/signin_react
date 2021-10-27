@@ -6,7 +6,6 @@ import Greet from "./subcomponents/Greet";
 function Form(props) {
   let [msg, setMsg] = useState(" ");
 
-  // console.dir(Input);
   function handleChange(event) {
     setMsg(event.target.value);
   }
